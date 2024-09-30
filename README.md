@@ -1,13 +1,15 @@
 # Youtube Video Downloader
 
 ### System requirements
-- python 3.12
-- pytube 15.0.0
-- poetry 1.7.1
+- python 3.12.3
+- poetry 1.8.3
+- pytubefix 7.1.3
 
 ### Use
 
 > poetry install --no-root
+
+> pip install pyinstaller
 
 > python main.py
 
