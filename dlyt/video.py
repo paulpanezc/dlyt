@@ -1,4 +1,4 @@
-from pytube import YouTube
+from pytubefix import YouTube
 from threading import Thread
 
 
@@ -24,7 +24,7 @@ class Video(Thread):
         main_stream = None
         for uri in YOUTUBE_URIS:
             if self.url.startswith(uri):
-                streams = YouTube(self.url).streams
+                streams = YouTube(url=self.url).streams
                 for extension in VIDEO_EXTENSIONS:
                     _streams = streams.filter(progressive=True, file_extension=extension)
                     if len(_streams) > 0:
